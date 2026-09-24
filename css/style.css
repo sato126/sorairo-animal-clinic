@@ -140,6 +140,9 @@ nav ul li:last-child {
     padding-right: 0px;
 }
 
+nav ul li:hover{
+    opacity: 0.7;
+}
 
 
 /* hero */
@@ -249,7 +252,7 @@ h1 {
 
 .news_list_data {
     border-left: 1px solid var(--deepblue);
-    padding-left: 8px;
+    padding-left: 18px;
 }
 
 .news_list li {
@@ -480,15 +483,12 @@ right: 4%;
 
 /* access */
 
-.access{
+#access{
   background-color: var(--lightblue);
 
 }
 
-.access .inner{
-    margin: 0;
-    padding: 0;
-}
+
 .map iframe{
     height:200px;
     width: 630px;
@@ -576,6 +576,10 @@ footer .logo{
     color: var(--white);
      border: none;
      padding: 0;
+}
+
+.footer_nav li:hover{
+    opacity: 0.7;
 }
 
 footer .tel{
@@ -814,7 +818,7 @@ footer .reception_hours{
 
 /* access */
 
-.access .inner{
+#access .inner{
     padding: 0 20px;
 }
 
