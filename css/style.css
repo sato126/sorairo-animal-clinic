@@ -485,6 +485,7 @@ right: 4%;
 
 #access{
   background-color: var(--lightblue);
+  
 
 }
 
@@ -609,6 +610,7 @@ footer .reception_hours{
     padding: 10px 80px;
     text-align: end;
     font-weight: 300;
+    font-size: 12px;
 }
 
 /* SP */
@@ -917,6 +919,7 @@ footer .reception_hours{
 .copylight{
     padding: 10px 0; 
     text-align: center;
+    font-size:10px;
 }
 
 }
