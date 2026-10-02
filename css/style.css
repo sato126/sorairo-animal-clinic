@@ -126,19 +126,27 @@ nav {
 
 nav ul {
     display: flex;
-    gap: 30px;
+    gap: 40px;
     margin-top: 30px;
 }
 
 nav ul li {
     font-size: 18 px;
     color: var(--deepblue);
-    border-right: 1px solid var(--deepblue);
-    padding-right: 30px;
+}
+
+.is-current{
+    border-bottom: 1px var(--deepblue) solid;
+}
+
+.access_link{
+    border-left: 1px var(--deepblue) solid;
+    border-right: 1px var(--deepblue) solid;
+    padding: 0 20px 0 20px;
+    
 }
 
 nav ul li:last-child {
-    border: none;
     padding-right: 0px;
 }
 
@@ -640,17 +648,6 @@ h4{
     font-size: 18px;
 }
 
-.is-current{
-    border-bottom: 1px var(--deepblue) solid;
-   padding-bottom: 4px;
-   padding-right: 10px;
-   border-right: none;
-}
-
-.access_link{
-    border-left: 1px var(--deepblue) solid;
-    padding-left: 30px;
-}
 
 .service_title {
     background-color: var(--lightblue);
