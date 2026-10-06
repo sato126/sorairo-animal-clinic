@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Kiwi+Maru&family=Mea+Culpa&family=Noto+Sans+JP:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playwrite+NL:wght@100..400&family=Zen+Kurenaido&family=Zen+Maru+Gothic&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9b5aad4a93.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>そらいろ動物病院｜Web予約</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="inner">
+
+            <div class="header_flex_wrap">
+                <div class="logo" id="top"><a href="index.html"><img src="image/logo.png" alt="そらいろ動物病院ロゴ"></a></div>
+                <p> <i class="fa-solid fa-phone"></i><span class="tel"><a href="tel:0001234567">000-123-4567</a>
+                    </span><br><span class="reception_hours">（受付時間 9:00–19:00）</span></p>
+            </div>
+
+
+            <nav>
+                <ul>
+                    <li><a href="service.html#top">診療案内</a></li>
+                    <li class="access_link"><a href="index.html#access">アクセス</a></li>
+                    <li class="is-current"><a href="#top">Web予約</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <section class="reservation_title">
+        <div class="inner">
+            <h1>Web予約</h1>
+            <p class="sub_title">Web Reservation</p>
+            <p>そらいろ動物病院では、待ち時間を短くするためWeb予約を受け付けています。 <br>
+                以下のフォームに必要事項をご入力ください。お急ぎの場合やご不明な点は、お電話でもご相談いただけます。</p>
+        </div>
+    </section>
+
+
+    <section class="reservation">
+        <div class="inner">
+
+            <h2>初めにお読みください</h2>
+
+            <p class="reservation_explanation">外科手術をご希望の場合は、診察のうえで日程を決めさせていただきます。まずは一般診療としてご予約ください。
+                <br>当日・翌日のご予約はお電話でお願いいたします。
+                ご予約の変更・キャンセルは、前日の診療時間内にご連絡ください。
+            </p>
+
+            <form>
+
+                <div class="owner_block">
+                    <h3 class="question_title">飼い主様について</h3>
+
+                    <div class="form_block"><label for="owner_name">お名前<span class="form_required">（必須）</span> </label>
+                        <input type="text" id="owner_name" name="owner_name" required placeholder="山田 花子">
+                    </div>
+
+                    <div class="form_block"><label for="owner_name_kana">フリガナ（任意）</label>
+                        <input type="text" id="owner_name_kana" placeholder="ヤマダ ハナコ">
+                    </div>
+
+                    <div class="form_block"><label for="owner_email">メールアドレス<span
+                                class="form_required">（必須）</span></label>
+                        <input type="email" id="owner_email" required placeholder="xxxx@xx.jp">
+                    </div>
+
+                    <div class="form_block"><label for="owner_tel">電話番号<span class="form_required">（必須）</span><span
+                                class="notes">※半角数字・ハイフンなし</span></label>
+                        <input type="tel" id="owner_tel" required placeholder="09012345678">
+                    </div>
+                </div>
+
+
+                <div class="animal_block">
+
+                    <h3>受診される動物について</h3>
+                    <div class="form_block"> <label for="animal_name">お名前<span class="form_required">（必須）</span></label>
+                        <input type="text" id="animal_name" required placeholder="ポチ">
+                    </div>
+
+
+                    <div class="form_block">
+                        <label for="animal_kind">動物の種類<span class="form_required">（必須）</span></label>
+
+                        <select name="animals" required id="animal_kind">
+                            <option value="" selected disabled>
+                                選択してください
+                            </option>
+                            <option value="dog">犬</option>
+                            <option value="cat">猫</option>
+                            <option value="rabbit">ウサギ</option>
+                            <option value="hamster">ハムスター</option>
+                            <option value="guineapig">モルモット</option>
+                            <option value="ferret">フェレット</option>
+                            <option value="smallbird">小鳥</option>
+                            <option value="others">その他</option>
+                        </select>
+                    </div>
+
+                    <div class="form_block">
+
+
+                        <label>ご来院は初めてですか<span class="form_required">（必須）</span></label>
+
+                        <div class="radio_group">
+                            <label>
+                                <input type="radio" name="visit_history" value="first" required>
+                                初めて（初診）
+                            </label>
+
+                            <label>
+                                <input type="radio" name="visit_history" value="return">
+                                2回目以降（再診）
+                            </label>
+                        </div>
+                    </div>
+                    <!-- form_block -->
+                </div>
+                <!-- animal_block -->
+
+
+                <div class="date_block">
+
+                    <h3>ご予約内容</h3>
+                    <div class="form_block">
+                        <label for="reservation_date">ご希望の日付 <span class="form_required">（必須）</span> </label>
+                        <input type="date" id="reservation_date" required>
+                    </div>
+
+                    <div class="form_block">
+
+                        <label>
+                            ご希望の時間帯
+                            <span class="form_required">（必須）</span>
+                        </label>
+
+                        <div class="time_visit">
+                            <label>
+                                <input type="radio" name="time" value="am" required>
+                                午前（<span class="number">9:00〜12:00</span>）
+                            </label>
+
+                            <label>
+                                <input type="radio" name="time" value="pm">
+                                午後（<span class="number">16:00〜19:00</span>）
+                            </label>
+                        </div>
+
+                    </div>
+
+
+                    <div class="form_block">
+
+                        <label>
+                            ご希望の診療内容
+                            <span class="form_required">（必須）</span>
+                        </label>
+
+                        <div class="radio_group">
+                            <label>
+                                <input type="radio" name="medicalservice" value="vaccination" required>
+                                予防接種
+                            </label>
+
+                            <label>
+                                <input type="radio" name="medicalservice" value="general">
+                                一般診療
+                            </label>
+
+                            <label>
+                                <input type="radio" name="medicalservice" value="checkup">
+                                健康診断
+                            </label>
+
+                            <label>
+                                <input type="radio" name="medicalservice" value="surgery">
+                                外科手術
+                            </label>
+                        </div>
+
+                    </div>
+
+                    <div class="form_block">
+                        <label>気になる症状・ご相談内容（任意）<br></label>
+                        <textarea placeholder="例：3日前から食欲がなく、元気がありません。"></textarea>
+                    </div>
+
+                    <div class="form_block submit_block">
+                        <input type="submit" value="この内容で予約する">
+                        <p class="notes">※送信後、確認メールをお送りします営業日以内に病院から折り返しご連絡いたしますので、しばらくお待ちください。</p>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="inner">
+            <div class="footer_flex_wrap">
+
+                <div class="information_flex_wrap">
+                    <div class="logo"><img src="image/logo.png" alt="そらいろ動物病院ロゴ"></div>
+
+                    <p> <i class="fa-solid fa-phone"></i><span class="tel"><a href="tel:0001234567">000-123-4567</a>
+                        </span><br><span class="reception_hours">（受付時間 9:00–19:00）</span></p>
+
+                    <p>〒000-0000 ○○県○○市○区○○町1-2-3<br>○○駅より徒歩8分／駐車場3台完備</p>
+                </div>
+
+                <ul class="footer_nav">
+                    <li><a href="#">診療案内</a></li>
+                    <li><a href="index.html#access">アクセス</a></li>
+                    <li><a href="">Web予約</a></li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="page_top"><a href="#top"><img src="image/page_top.png" alt="ページトップへ戻る"></a> </div>
+
+    </footer>
+
+    <div class="copylight">
+        <p>&copy 2026 そらいろ動物病院</p>
+    </div>
+
+</body>
+
+</html>
