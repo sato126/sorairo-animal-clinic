@@ -637,8 +637,6 @@ footer .reception_hours{
 
 /* service */
 
-/* 共通 */
-
 h3{
   font-size: 20px;
   margin-bottom: 18px;
@@ -665,6 +663,7 @@ h4{
     text-align: center;
 }
 
+
 /* generalclinical */
 
 #generalclinical{
@@ -680,7 +679,6 @@ h4{
     width: 90%;
     margin: 0 auto;
 }
-
 
 .generalclinical_list{
     width: 100%;
@@ -831,6 +829,138 @@ h4{
     gap: 100px;   
 }
 
+/* reservation */
+.reservation_title {
+    background-color: var(--lightblue);
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  background-image: url(../image/cloud.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.reservation_title .inner {
+    text-align: center;
+}
+
+.reservation{
+    padding: 60px 0;
+    background-color: var(--white);
+}
+
+.reservation h2{
+    margin-bottom: 10px;
+}
+
+.reservation h3{
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--deepblue);
+    margin-top: 30px;
+  border-bottom: 1px solid var(--deepblue);
+}
+
+.reservation_explanation{
+   width: 90%;
+   margin: 0 auto;
+}
+
+form{
+    width: 90%;
+    margin: 0 auto;
+    background-color: var(--white);
+    margin-top: 40px;
+}
+
+
+.form_required{
+    background-color: var(--orange);
+    color: var(--white);
+    border-radius: 4px;
+    display: inline-block;
+    margin-left: 8px;
+    font-size: 13px;
+}
+
+.form_block {
+    display: flex;
+    align-items: flex-start;
+     margin-bottom: 20px;
+}
+
+.form_block > label {
+    width: 330px;
+}
+
+
+.form_block input[type="text"],
+.form_block input[type="email"],
+.form_block input[type="tel"],
+.form_block input[type="date"],
+.form_block select,
+.form_block textarea {
+    width: 100%;
+    max-width: 300px;
+     border: 1px solid #ccc;
+    border-radius: 3px;
+     font: inherit;
+    background-color: #fff;
+
+}
+
+.form_block [type="submit"]{
+        background-color: var(--deepblue);
+        color: var(--white);
+        border-radius:20px;
+        border: none;
+        padding: 10px 40px;
+        box-shadow:1px 1px 2px #043666;
+}
+
+
+.form_block [type="submit"]:hover{
+    opacity: 0.7;
+}
+
+.radio_group {
+    display: flex;
+    gap: 30px;
+}
+
+.owner_block{
+     margin-bottom: 50px;
+}
+
+.animal_block{
+    margin-bottom: 50px;
+}
+
+textarea{
+    height: 100px;
+}
+
+.submit_block {
+    padding-left: 330px;
+    flex-direction: column;
+}
+
+.submit_block p{
+    width: 70%;
+}
+
+.submit_block .notes {
+    margin: 4px 0 0;
+}
+
+.notes{
+    font-size: 13px;
+    color: #5F5F5F;
+}
+
+
 /* SP */
 @media (max-width: 768px) {
 
@@ -885,7 +1015,7 @@ h4{
     nav ul li {
         font-size: 18px;
         color: var(--deepblue);
-        padding-right: 20px;
+        padding-right: 10px;
     }
 
     /* hero */
@@ -963,8 +1093,6 @@ h4{
         font-size: 14px;
 
     }
-
-
 
     /* about */
 
@@ -1209,6 +1337,70 @@ footer .reception_hours{
 .surgery_flex_wrap{
     flex-direction: column;
     gap: 20px;   
+}
+
+/* reservation */
+
+.reservation{
+    padding: 40px 0;
+    line-height:1.7;
+}
+
+
+
+.form_block {
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.form_block > label {
+    width: 330px;
+
+}
+
+.form_block input[type="text"],
+.form_block input[type="email"],
+.form_block input[type="tel"],
+.form_block input[type="date"],
+.form_block select,
+.form_block textarea {
+    margin-top: 5px;
+    max-width: 330px;
+}
+
+.form_block [type="submit"]{
+             margin: 0 auto;
+             padding:14px 60px;
+}
+
+.radio_group {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+
+}
+
+.time_visit{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 10px;
+}
+
+.owner_block{
+     margin-bottom: 40px;
+}
+
+.animal_block{
+    margin-bottom: 40px;
+}
+
+
+.submit_block {
+    padding-left: 0;
+}
+
+.submit_block p{
+    width: 100%;    
 }
 
 
