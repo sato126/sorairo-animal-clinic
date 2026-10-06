@@ -912,12 +912,12 @@ form{
 }
 
 .form_block [type="submit"]{
-        background-color: var(--orange);
+        background-color: #F29D52;
         color: var(--white);
         border-radius:20px;
         border: none;
         padding: 10px 40px;
-        box-shadow:1px 1px 2px #043666;
+        box-shadow:1px 1px 2px #4E2602;
 }
 
 
