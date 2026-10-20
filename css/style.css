@@ -626,7 +626,7 @@ footer .reception_hours{
     z-index: 999;
 }
 
-.copylight{
+.copyright{
     background-color: var(--deepblue);
     color: var(--white);
     padding: 10px 80px;
@@ -1260,7 +1260,7 @@ footer .reception_hours{
     align-items: center;
 }
 
-.copylight{
+.copyright{
     padding: 10px 0; 
     text-align: center;
     font-size:10px;
